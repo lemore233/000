@@ -3,29 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Android;
+using UnityEngine.Events;
 
 
 public class Botao : MonoBehaviour
 {
-    bool SeleObj;
-   
-    // Update is called once per frame
-    void Update()
-    {
-        if (SeleObj == true) {
-            if (Input.GetMouseButtonDown(0))
-            {
-                SceneManager.LoadScene("quiz");
-            }
-        }
-    }
+    public UnityEvent BT;
 
-    private void OnMouseEnter()
+    private void Update()
     {
-        SeleObj = true;
-    }
-    private void OnMouseExit()
-    {
-        SeleObj = false;
+        if ((Input.GetMouseButtonDown(0)) && (Input.touchCount < 2))
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            
+            if (Physics.Raycast(ray,out hit))
+            {
+                if ((hit.transform.name == gameObject.name))
+                {
+                    BT.Invoke();
+
+                }
+            }
+
+        }
     }
 }

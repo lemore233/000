@@ -562,8 +562,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 524804480}
         m_TargetAssemblyTypeName: ControleCanvas, Assembly-CSharp
-        m_MethodName: VerificaBotao
-        m_Mode: 3
+        m_MethodName: GoMain
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -709,6 +709,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 835cc7ff283e3e84992fcbdcae702409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BT:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 524804480}
+        m_TargetAssemblyTypeName: ControleCanvas, Assembly-CSharp
+        m_MethodName: GoQuiz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &473144845
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff496c3a49c3c384e96a10e2e7bd12c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  painel2: {fileID: 0}
   BotaoSom:
   - {fileID: 764854686}
   - {fileID: 297370859}
@@ -1195,8 +1209,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 524804480}
         m_TargetAssemblyTypeName: ControleCanvas, Assembly-CSharp
-        m_MethodName: VerificaBotao
-        m_Mode: 3
+        m_MethodName: DesceConfig
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1528,8 +1542,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 524804480}
         m_TargetAssemblyTypeName: ControleCanvas, Assembly-CSharp
-        m_MethodName: VerificaBotao
-        m_Mode: 3
+        m_MethodName: SobeConfig
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2178,8 +2192,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 524804480}
         m_TargetAssemblyTypeName: ControleCanvas, Assembly-CSharp
-        m_MethodName: VerificaBotao
-        m_Mode: 3
+        m_MethodName: Quit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
